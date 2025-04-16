@@ -3,6 +3,63 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 class="text-center">LimitLess</h2>
+
+<div class="about">
+    <div class="container relative">
+        <h4>About</h4>
+        <div class="col-md-8 about-text">
+            <p>
+                Before the evolution of wolf into dog, it is posited that humans and wolves worked together hunting game.
+                Wolves were the superior tracker but humans were the superior killer; thus wolves would lead humans to the
+                prey and humans would leave some of the meat to the wolves.the superior tracker but humans were the superior killer; thus wolves would lead humans to the
+                prey and humans would leave some of the meat to the wolves.
+            </p>
+            <p class="second-text">
+                It is said that giving up all their belongings and ties, the Pandavas, accompanied by a dog, made their final
+                journey of pilgrimage to the Himalayas. Yudhisthira was the only one to reach the mountain peak in his mortal
+                body, because he was unblemished by sin or untruth.the superior tracker but humans were the superior killer; thus wolves would lead humans to the
+                prey and humans would leave some of the meat to the wolves.
+            </p>
+        </div>
+        <div class="col-md-4 about-slider">
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="~/images/b1.jpg" class="img-responsive" alt="" />
+                        </li>
+                        <li>
+                            <img src="~/images/b2.jpg" class="img-responsive" alt="" />
+                        </li>
+                        <li>
+                            <img src="~/images/b1.jpg" class="img-responsive" alt="" />
+                        </li>
+                        <li>
+                            <img src="~/images/b3.jpg" class="img-responsive" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+ @*FlexSlider*@ 
+<script defer src="js/jquery.flexslider.js"></script>
+            <script src="~/Scripts/TemplateJS/jquery.flexslider.js" defer></script>
+            <script type="text/javascript">
+                $(function () {
+                    SyntaxHighlighter.all();
+                });
+                $(window).load(function () {
+                    $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function (slider) {
+                            $('body').removeClass('loading');
+                        }
+                    });
+                });
+            </script>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
 
 <script src="~/GymScript/Gym.js"></script>
